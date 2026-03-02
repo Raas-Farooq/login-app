@@ -67,7 +67,7 @@ const Navbar = ({ onNavigate }: NavbarProps) => {
           onClick={handleLogoClick}
           className="text-xl sm:text-2xl font-bold text-white cursor-pointer hover:scale-105 transition-transform duration-300 whitespace-nowrap bg-none border-none p-0"
         >
-          MyHosting
+          <img src="../assets/img/logo-light.png" alt="myHosting Log" />
         </button>
 
         {/* Navigation Menu - Desktop */}
@@ -116,7 +116,7 @@ const Navbar = ({ onNavigate }: NavbarProps) => {
         {/* Login/Logout Button - Desktop */}
         <button 
           onClick={isLoggedIn ? handleLogout : handleLoginClick}
-          className="hidden lg:block bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold px-6 py-2 rounded-full transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap cursor-pointer"
+          className="hidden lg:block bg-white text-blue-800 font-semibold px-6 py-2 rounded-full transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap cursor-pointer"
         >
           {isLoggedIn ? 'Logout' : 'Get Domain'}
         </button>
@@ -187,9 +187,9 @@ const Navbar = ({ onNavigate }: NavbarProps) => {
             <li className="pt-2">
               <button 
                 onClick={isLoggedIn ? handleLogout : handleLoginClick}
-                className="w-full bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold px-6 py-2 rounded-full transition-all duration-300 hover:shadow-lg cursor-pointer"
+                className="w-full bg-white text-blue-800 font-semibold px-6 py-2 rounded-full transition-all duration-300 hover:shadow-lg cursor-pointer"
               >
-                {isLoggedIn ? 'Logout' : 'Login'}
+                {isLoggedIn ? 'Logout' : 'Get Domain'}
               </button>
             </li>
           </ul>
